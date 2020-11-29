@@ -10,8 +10,11 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: module name here
+      title: Core utilities module
       url: core.html
+    - output: web,pdf
+      title: module name here
+      url: logistic_regression.html
     output: web
     title: deeplearningai_nlp_course1
   output: web

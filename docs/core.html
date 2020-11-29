@@ -1,13 +1,13 @@
 ---
 
-title: module name here
+title: Core utilities module
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "API details."
-description: "API details."
+summary: "This module implements core modules for the exercies."
+description: "This module implements core modules for the exercies."
 nb_path: "00_core.ipynb"
 ---
 <!--
@@ -40,9 +40,9 @@ nb_path: "00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="say_hello" class="doc_header"><code>say_hello</code><a href="https://github.com/hkaraoguz/deeplearningai_nlp_course1/tree/master/deeplearningai_nlp_course1/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>say_hello</code>(<strong><code>to</code></strong>)</p>
+<h4 id="read_sentiment_dataset" class="doc_header"><code>read_sentiment_dataset</code><a href="https://github.com/hkaraoguz/deeplearningai_nlp_course1/tree/master/deeplearningai_nlp_course1/core.py#L7" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>read_sentiment_dataset</code>(<strong><code>path</code></strong>)</p>
 </blockquote>
-<p>Say hello to somebody</p>
+<p>Reads the sentiment140 dataset csv file. The dataset can be downloaded from Kaggle</p>
 
 </div>
 
@@ -64,14 +64,22 @@ nb_path: "00_core.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">say_hello</span><span class="p">(</span><span class="s2">&quot;Hakan&quot;</span><span class="p">)</span>
-</pre></div>
+<div class="output_wrapper">
+<div class="output">
 
-    </div>
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="subsample_dataset" class="doc_header"><code>subsample_dataset</code><a href="https://github.com/hkaraoguz/deeplearningai_nlp_course1/tree/master/deeplearningai_nlp_course1/core.py#L14" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>subsample_dataset</code>(<strong><code>df</code></strong>, <strong><code>no_lines</code></strong>=<em><code>5000</code></em>)</p>
+</blockquote>
+<p>Subsamples the dataset for faster processing</p>
+
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -81,16 +89,137 @@ nb_path: "00_core.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="n">say_hello</span><span class="p">(</span><span class="s2">&quot;Hakan&quot;</span><span class="p">)</span><span class="o">==</span><span class="s2">&quot;Hello Hakan!&quot;</span>
-</pre></div>
+</div>
+    {% endraw %}
 
-    </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="preprocess_text" class="doc_header"><code>preprocess_text</code><a href="https://github.com/hkaraoguz/deeplearningai_nlp_course1/tree/master/deeplearningai_nlp_course1/core.py#L26" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>preprocess_text</code>(<strong><code>text</code></strong>)</p>
+</blockquote>
+<p>Preprocess tweets to remove https links and mentions
+Remove punctioation
+Stemmize the words</p>
+
+</div>
+
+</div>
+
 </div>
 </div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="parallelize" class="doc_header"><code>parallelize</code><a href="https://github.com/hkaraoguz/deeplearningai_nlp_course1/tree/master/deeplearningai_nlp_course1/core.py#L59" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>parallelize</code>(<strong><code>data</code></strong>, <strong><code>func</code></strong>, <strong><code>num_of_processes</code></strong>=<em><code>8</code></em>)</p>
+</blockquote>
+<p>Parallelize the dataframe processing</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="preprocess_df_text" class="doc_header"><code>preprocess_df_text</code><a href="https://github.com/hkaraoguz/deeplearningai_nlp_course1/tree/master/deeplearningai_nlp_course1/core.py#L72" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>preprocess_df_text</code>(<strong><code>df</code></strong>)</p>
+</blockquote>
+<p>Preprocesses the text field of dataframe</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="calculate_word_attributes" class="doc_header"><code>calculate_word_attributes</code><a href="https://github.com/hkaraoguz/deeplearningai_nlp_course1/tree/master/deeplearningai_nlp_course1/core.py#L82" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_word_attributes</code>(<strong><code>df</code></strong>)</p>
+</blockquote>
+<p>Calculates the word attributes in a dataframe such as
+total words, unique words and word frequency dictionary</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 
 </div>
     {% endraw %}

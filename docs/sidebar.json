@@ -1,6 +1,7 @@
 {
   "deeplearningai_nlp_course1": {
     "Overview": "/",
-    "module name here": "core.html"
+    "Core utilities module": "core.html",
+    "module name here": "logistic_regression.html"
   }
 }

@@ -2,7 +2,13 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"say_hello": "00_core.ipynb"}
+index = {"read_sentiment_dataset": "00_core.ipynb",
+         "subsample_dataset": "00_core.ipynb",
+         "preprocess_text": "00_core.ipynb",
+         "parallelize": "00_core.ipynb",
+         "preprocess_df_text": "00_core.ipynb",
+         "calculate_word_attributes": "00_core.ipynb",
+         "say_hello": "01_logistic_regression.ipynb"}
 
 modules = ["core.py"]
 
