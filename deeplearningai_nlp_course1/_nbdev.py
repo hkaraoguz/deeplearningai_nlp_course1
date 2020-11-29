@@ -10,7 +10,8 @@ index = {"read_sentiment_dataset": "00_core.ipynb",
          "calculate_word_attributes": "00_core.ipynb",
          "say_hello": "01_logistic_regression.ipynb"}
 
-modules = ["core.py"]
+modules = ["core.py",
+           "logistic_regression.py"]
 
 doc_url = "https://hkaraoguz.github.io/deeplearningai_nlp_course1/"
 
